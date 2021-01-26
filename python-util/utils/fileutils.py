@@ -22,3 +22,7 @@ def readFileAsOriginalStr(fileName):
         for line in f.readlines():
             data += line
     return data
+
+def writeToFile(fileName,str):
+    with open(fileName, 'a',encoding='utf-8') as f:
+        f.write(str)
